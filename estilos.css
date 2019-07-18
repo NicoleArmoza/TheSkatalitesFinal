@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+/* NAV */
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px 0;
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: yellow;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+}
+
+nav ul li .submenu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+nav ul li .submenu li {
+  display: block;
+}
+nav ul li .submenu li a {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+/* HOME */
+#home {
+  height: 100vh;
+  background: url("imagenes/portada.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 70px;
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px yellow;
+}
+
+article {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+/* BIOGRAPHY */
+#biography {
+  padding: 15px;
+  overflow: auto;
+  clear: both;
+}
+
+article #textoBanda p {
+  margin: auto;
+  font-size: 18px;
+  color: #333;
+  line-height: 150%;
+  box-sizing: border-box;
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+#textoBanda {
+  margin-right: 15px;
+}
+
+article #imagenBanda {
+  padding: 15px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+/* SOCIAL NETWORK */
+#socialNetwork {
+  padding: 15px;
+  overflow: auto;
+  clear: both;
+}
+#socialNetwork .contenedores {
+  height: 100vh;
+  overflow: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+}
+#youtube {
+  padding: 15px;
+  align-self: center;
+}
+
+#youtube iframe {
+  width: 80%;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+
+#fb,
+#fb span,
+#fb span iframe {
+  padding: 15px;
+  height: 540px !important;
+  width: 330px !important;
+}
+.fb_inframe_widget {
+  display: inline-block;
+  position: relative;
+}
+
+#tw {
+  float: left;
+  padding: 15px;
+}
+
+#spotify {
+  padding: 15px;
+}
+#spotify inframe {
+  height: 200px;
+  float: left;
+  display: block;
+  margin: auto;
+}
+
+#members {
+  padding: 15px;
+  overflow: auto;
+  clear: both;
+  position: relative;
+}
+
+.contenedor_redes {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: yellow;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+/* MEMBERS */
+#members p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  color: #333;
+  line-height: 150%;
+  box-sizing: border-box;
+}
+
+#members .contenedores {
+  overflow: auto;
+  clear: both;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+#texto {
+  float: left;
+  padding: 15px;
+}
+#doreenFoto {
+  float: right;
+  padding: 15px;
+}
+
+#kenFoto {
+  float: right;
+  padding: 15px;
+  height: 360px;
+  width: 360px;
+  filter: grayscale();
+}
+
+#nattyFoto {
+  float: right;
+  padding: 15px;
+  height: 350px;
+  width: 340px;
+  filter: grayscale();
+}
+
+#valFoto {
+  float: right;
+  padding: 15px;
+  height: 333px;
+  width: 360px;
+  filter: grayscale();
+}
+
+#zemFoto {
+  float: right;
+  padding: 15px;
+  height: 350px;
+  width: 350px;
+  filter: grayscale();
+}
+
+#andraeFoto {
+  float: right;
+  padding: 15px;
+  height: 350px;
+  width: 350px;
+  filter: grayscale();
+}
+#trevorFoto {
+  float: right;
+  padding: 15px;
+  height: 320px;
+  width: 320px;
+  filter: grayscale();
+}
+
+/* ALBUMS */
+
+/* TOUR */
+
+/* CONTACT */
+.contact {
+  background: rgba(0, 0, 0, 0.849);
+  border-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 50%;
+  margin: auto;
+}
+
+.contact form input,
+.contact form textarea {
+  border: none;
+  padding: 1rem;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: black;
+  outline: none;
+  resize: none;
+  box-shadow: 2px 2px 2px yellow;
+}
+
+.contact form input.enviar {
+  background: yellow;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+}
+
+.contact form input.enviar:hover {
+  background: white;
+  box-shadow: 2px 2px 2px yellow;
+}
