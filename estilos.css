@@ -262,6 +262,25 @@ h2 {
 }
 
 /* ALBUMS */
+#albums {
+  padding: 40px;
+  width: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+#albumbs ul li {
+  display: flex;
+  justify-content: space-around;
+}
+#albumfotos {
+  padding: 15px;
+  margin: 15px;
+  height: 150px;
+  width: 150px;
+}
+#albums ul li:hover {
+  filter: grayscale();
+}
 
 /* TOUR */
 
@@ -522,4 +541,20 @@ p:last-child {
     align-items: center;
     justify-content: center;
   }
+}
+
+/* FOOTER */
+footer {
+  z-index: 1;
+  background: black;
+  margin: 15px;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px yellow;
+  text-align: center;
 }
