@@ -262,17 +262,18 @@ h2 {
 }
 
 /* ALBUMS */
-#album {
+#albums {
   padding: 40px;
   width: 100vh;
+}
+
+#album {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-#albumbs ul li {
-  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
 #albumfotos {
   padding: 15px;
   margin: 15px;
