@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>The Skatalites</title>
         <link rel="stylesheet" href="estilos.css" />
+        <script src="https://kit.fontawesome.com/ad67ee6c4c.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
     </head>
@@ -13,8 +14,10 @@
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.3"></script>
 
         <header>
+           <!-- BARRA -->
+            <i class="fas fa-bars abrir"></i>
             <nav>
-            <!-- BARRA -->
+                <i class="fas fa-times cerrar"></i>
                 <ul>   
                     <li><a href="#home">Home</a></li>
                     <li><a href="#biography">Biography</a></li>
@@ -114,55 +117,39 @@
         
         <!-- ALBUMS -->
       <section id="albums">
-                <h1>albums</h1>
-        <div id="album">
-            <ul>
-              <li>
-                <img src="imagenes/album1.jpeg" alt="" id="albumfotos" >
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="imagenes/album2.jpeg" alt="" id="albumfotos">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="imagenes/album3.jpeg" alt="" id="albumfotos">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="imagenes/album4.jpeg" alt="" id="albumfotos">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="imagenes/album5.jpeg" alt="" id="albumfotos">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="imagenes/album6.jpeg" alt="" id="albumfotos">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="imagenes/album7.jpeg" alt="" id="albumfotos">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="imagenes/album8.jpeg" alt="" id="albumfotos">
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="imagenes/album9.jpeg" alt="" id="albumfotos">
-              </li>
-            </ul>
-          </div>
-        </section>
+        <h1>albums</h1>
+        <div>
+          <ul id="album">
+            <li>
+              <img src="imagenes/album1.jpeg" alt="" id="albumfotos" >
+            </li>
+            <li>
+              <img src="imagenes/album2.jpeg" alt="" id="albumfotos">
+            </li>
+            <li>
+              <img src="imagenes/album3.jpeg" alt="" id="albumfotos">
+            </li>
+            <li>
+              <img src="imagenes/album4.jpeg" alt="" id="albumfotos">
+            </li>
+            <li>
+              <img src="imagenes/album5.jpeg" alt="" id="albumfotos">
+            </li>
+            <li>
+              <img src="imagenes/album6.jpeg" alt="" id="albumfotos">
+            </li>
+            <li>
+              <img src="imagenes/album7.jpeg" alt="" id="albumfotos">
+            </li>
+            <li>
+              <img src="imagenes/album8.jpeg" alt="" id="albumfotos">
+            </li>
+            <li>
+              <img src="imagenes/album9.jpeg" alt="" id="albumfotos">
+            </li>
+          </ul>
+        </div>
+      </section>
          <!-- TOUR -->
          <section id="tour">
                 <h1>tour dates</h1>
@@ -228,7 +215,7 @@
                       </div>
                     </div>
                   </div>
-               
+          </section>     
          <!-- CONTACT -->
          <section id="contact" class="contact">
                 <h1>contact</h1>
@@ -239,11 +226,17 @@
                         <textarea name="mensaje" placeholder="Write your message here" cols="30" rows="10"></textarea>
                         <input type="submit" value= "Submit" class="enviar">
                 </form>
-
+          </section>
     <!-- FOOTER -->
      <footer>
-       <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+       <p> Copyright © 2019 The Skatalites. All rights reserved.</p>
      </footer>
 
+     <script
+     src="https://code.jquery.com/jquery-3.4.1.min.js"
+     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+     crossorigin="anonymous"
+   ></script> 
+   <script src="js/menu.js"></script>
     </body>
 </html>
