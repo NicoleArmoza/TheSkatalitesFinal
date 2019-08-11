@@ -582,7 +582,7 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
   }
   header nav {
@@ -654,7 +654,14 @@ footer p {
     justify-content: center;
     align-content: stretch;
   }
-
+  #album {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+  }
   #contact form {
     margin: 0 0 40px;
     width: 250px;
