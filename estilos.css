@@ -87,7 +87,6 @@ h1 {
 
 /* BIOGRAPHY */
 #biography {
-  padding: 15px;
   overflow: auto;
   clear: both;
 }
@@ -426,7 +425,7 @@ h2 {
   }
 
   .timeline__date {
-    top: 0;
+    position: static;
   }
 }
 
