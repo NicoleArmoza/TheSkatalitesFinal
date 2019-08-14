@@ -615,6 +615,10 @@ footer p {
     text-shadow: 2px 2px 2px white;
   }
 
+  nav ul li:hover .submenu {
+    display: none;
+  }
+
   #home {
     background: url(imagenes/celular.jpg);
     background-size: auto;
@@ -653,7 +657,14 @@ footer p {
     flex-wrap: wrap;
     justify-content: center;
     align-content: stretch;
+    overflow: visible;
+    clear: none;
+    height: auto;
   }
+  #members p {
+    width: 100%;
+  }
+
   #album {
     width: 100%;
     display: flex;
